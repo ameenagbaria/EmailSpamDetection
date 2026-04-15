@@ -1,0 +1,62 @@
+{
+  "accuracy": 0.988,
+  "macro_f1": 0.9879965309974582,
+  "roc_auc": 0.9982978910650282,
+  "confusion_matrix": [
+    [
+      971,
+      21
+    ],
+    [
+      3,
+      1005
+    ]
+  ],
+  "per_class_metrics": {
+    "ham": {
+      "precision": 0.9969199178644764,
+      "recall": 0.9788306451612904,
+      "f1": 0.987792472024415,
+      "support": 992
+    },
+    "spam": {
+      "precision": 0.97953216374269,
+      "recall": 0.9970238095238095,
+      "f1": 0.9882005899705014,
+      "support": 1008
+    }
+  },
+  "classification_report": {
+    "ham": {
+      "precision": 0.9969199178644764,
+      "recall": 0.9788306451612904,
+      "f1-score": 0.987792472024415,
+      "support": 992.0
+    },
+    "spam": {
+      "precision": 0.97953216374269,
+      "recall": 0.9970238095238095,
+      "f1-score": 0.9882005899705014,
+      "support": 1008.0
+    },
+    "accuracy": 0.988,
+    "macro avg": {
+      "precision": 0.9882260408035832,
+      "recall": 0.9879272273425499,
+      "f1-score": 0.9879965309974582,
+      "support": 2000.0
+    },
+    "weighted avg": {
+      "precision": 0.988156489787096,
+      "recall": 0.988,
+      "f1-score": 0.9879981634692425,
+      "support": 2000.0
+    }
+  },
+  "config": {
+    "dataset": "SetFit/enron_spam",
+    "vectorizer": "tfidf",
+    "model": "logistic_regression",
+    "max_features": 20000
+  }
+}
