@@ -1,0 +1,62 @@
+{
+  "accuracy": 0.984,
+  "macro_f1": 0.9839972955429468,
+  "roc_auc": 0.9958577348950333,
+  "confusion_matrix": [
+    [
+      971,
+      21
+    ],
+    [
+      11,
+      997
+    ]
+  ],
+  "per_class_metrics": {
+    "ham": {
+      "precision": 0.9887983706720977,
+      "recall": 0.9788306451612904,
+      "f1": 0.983789260385005,
+      "support": 992
+    },
+    "spam": {
+      "precision": 0.9793713163064833,
+      "recall": 0.9890873015873016,
+      "f1": 0.9842053307008884,
+      "support": 1008
+    }
+  },
+  "classification_report": {
+    "ham": {
+      "precision": 0.9887983706720977,
+      "recall": 0.9788306451612904,
+      "f1-score": 0.983789260385005,
+      "support": 992.0
+    },
+    "spam": {
+      "precision": 0.9793713163064833,
+      "recall": 0.9890873015873016,
+      "f1-score": 0.9842053307008884,
+      "support": 1008.0
+    },
+    "accuracy": 0.984,
+    "macro avg": {
+      "precision": 0.9840848434892906,
+      "recall": 0.9839589733742959,
+      "f1-score": 0.9839972955429468,
+      "support": 2000.0
+    },
+    "weighted avg": {
+      "precision": 0.9840471352718281,
+      "recall": 0.984,
+      "f1-score": 0.9839989598242103,
+      "support": 2000.0
+    }
+  },
+  "config": {
+    "dataset": "SetFit/enron_spam",
+    "vectorizer": "bow",
+    "model": "naive_bayes",
+    "max_features": 20000
+  }
+}
