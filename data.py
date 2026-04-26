@@ -5,10 +5,6 @@ from typing import Tuple
 
 from datasets import Dataset, load_dataset
 
-
-#DATASET_NAME = "SetFit/enron_spam"
-
-
 def load_data_splits(dataset_name) -> Tuple[Dataset, Dataset]:
     """Load train/test splits from Hugging Face."""
     ds = load_dataset(dataset_name)
@@ -79,15 +75,15 @@ def extract_metadata(text):
 
     # Punctuation features
     num_exclamations = text.count('!')
-    num_dollar_signs = text.count('$')
+    # num_dollar_signs = text.count('$')
 
     # Capitalization features
     num_all_caps_words = sum(1 for word in text.split() if word.isupper())
-    uppercase_ratio = num_all_caps_words / num_words
+    uppercase_ratio = num_all_caps_words / max(num_words, 1)
     
     # Digits features
-    num_digits = sum(c.isdigit() for c in text)
-    has_digits = int(num_digits > 0)
+    # num_digits = sum(c.isdigit() for c in text)
+    # has_digits = int(num_digits > 0)
 
     # Keyword features
     keywords_verify = ['verify', 'verification', 'confirm', 'confirmation', 'account', 'password', 'bank', 'social security', 'click', 'ssn', 'credit card', 'debit card']
@@ -103,11 +99,11 @@ def extract_metadata(text):
         num_urls,
         hasurl,
         num_exclamations,
-        num_dollar_signs,
+        # num_dollar_signs,
         num_all_caps_words,
         uppercase_ratio,
-        num_digits,
-        has_digits,
+        # num_digits,
+        # has_digits,
         contains_verify_keywords,
         contains_offer_keywords,
         contains_urgency_keywords
