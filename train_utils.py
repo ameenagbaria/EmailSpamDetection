@@ -22,8 +22,8 @@ from sklearn.metrics import (
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.pipeline import Pipeline
 
-STAGES = ["stage_1", "stage_2", "stage_3", "stage_4", "stage_5"]
-MODEL_CHOICES = ["naive_bayes", "logistic_regression"]
+STAGES = ["stage_1", "stage_2", "stage_3", "stage_4", "stage_5", "stage_6"]
+MODEL_CHOICES = ["naive_bayes", "logistic_regression", "BERT"]
 VECTORIZER_CHOICES = ["bow", "tfidf"]
 
 

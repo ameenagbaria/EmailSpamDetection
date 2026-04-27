@@ -2,3 +2,7 @@ datasets
 scikit-learn
 joblib
 pyarrow
+torch
+evaluate
+transformers
+accelerate
