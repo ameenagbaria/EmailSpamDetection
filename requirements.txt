@@ -5,3 +5,8 @@ pyarrow
 numpy
 torch
 matplotlib
+evaluate
+transformers
+accelerate
+multiCatTransformer
+d9e9c3c8b5fbf4858f6f2d1e32e0ad494eca47d1
