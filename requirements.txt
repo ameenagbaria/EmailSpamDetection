@@ -1,4 +1,12 @@
 datasets
 scikit-learn
 joblib
+<<<<<<< HEAD
 pyarrow
+=======
+pyarrow
+torch
+evaluate
+transformers
+accelerate
+>>>>>>> multiCatTransformer

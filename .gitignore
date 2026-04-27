@@ -1,0 +1,7 @@
+venv/
+artifacts/checkpoint-*/
+__pycache__/
+*.pyc
+artifacts/model.safetensors
+artifacts/training_args.bin
+.DS_Store
